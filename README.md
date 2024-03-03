@@ -3,6 +3,8 @@
 1. [Hallar números primos](#hallar-números-primos)
       - [Pseudocodigo](#pseudocódigo-primos)
       - [Flowchart](#flowchart)
+2. [Hallar raiz de n](#hallar-raiz-de-n)
+      - [Pseudocódigo](#pseudocódigo-raiz)
 
 # Hallar números primos
 ## Pseudocódigo primos 
@@ -40,3 +42,31 @@ F{¿Modulo i/x = 0?} -- Si --> G[i no es primo] -->K[Fin]
 F -- No --> H{"¿x=(i^0.1) - 1?"} -- Si --> I[Es primo] -->K
 H -- No --> J{x=x+1} --> F
 ```
+
+# Hallar raiz de n
+
+## Pseudocódigo raiz
+```pseudocode
+Variables]
+n: Entero positivo
+c: real positivo 
+Inicio
+n = entrada (“Ingrese número para calcular raíz (entero positivo)”)
+Separar n en grupos (g) de 2 en 2 hasta final de n de derecha a izquierda 
+g1 = Primer g de derecha a izquierda 
+Buscar c tal que cˆ2 se acerque a g1 
+r = g1-(cˆ2) 
+Repetir
+	bajar siguiente g a r
+	m = c*2 
+	buscar x tal que 
+		mx = poner x al lado derecho de m
+		mx * x ≈ residuo 
+		cx = poner x al lado derecho de c 
+	nr = r – (mx * x) 
+	c == cx
+	r == nr 
+Hasta que [cˆ2 = n ] 
+Fin
+```
+
