@@ -1,2 +1,5 @@
-# RETO3
-Desarrollo del reto 3 (programación de computadores)
+#Reto #3 
+##Lista de contenidos
+1. [Hallar números primos](#Hallar-números-primos)
+
+#Hallar números primos
