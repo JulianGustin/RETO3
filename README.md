@@ -70,7 +70,7 @@ Repetir
 Hasta que [cˆ2 = n ] 
 Fin
 ```
-##Flowchart raiz
+## Flowchart raiz
 ```mermaid
 flowchart TD;
 A[Inicio]-->B[n = entrada]-->C
