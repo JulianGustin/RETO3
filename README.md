@@ -36,7 +36,7 @@ flowchart TD;
 A[Inicio]-->B[Entrada]-->C
 C[Número n]-->D[Para cada i desde n hasta n]-->E 
 E[Para cada x < i]-->F
-F{¿Modulo i/x = 0?} -- Si --> G[i es primo] -->K[Fin]
+F{¿Modulo i/x = 0?} -- Si --> G[i no es primo] -->K[Fin]
 F -- No --> H{"¿x=(i^0.1) - 1?"} -- Si --> I[Es primo] -->K
 H -- No --> J{x=x+1} --> F
 ```
