@@ -5,6 +5,7 @@
       - [Flowchart](#flowchart)
 2. [Hallar raiz de n](#hallar-raiz-de-n)
       - [Pseudocódigo](#pseudocódigo-raiz)
+      - [Flowchart](#flowchart-raiz)
 
 # Hallar números primos
 ## Pseudocódigo primos 
@@ -68,5 +69,18 @@ Repetir
 	r == nr 
 Hasta que [cˆ2 = n ] 
 Fin
+```
+##Flowchart raiz
+```mermaid
+flowchart TD;
+A[Inicio]-->B[n = entrada]-->C
+C[Separar n en grupos de 2 en 2 de derecha a izquierda hasta final de n]-->D 
+D[Buscar c tal que c^2 se acerque al primer grupo de izquierda a derecha]-->E
+E[Restar primer grupo - c^2]-->F{¿El residuo es 0?}-- Si -->G[c es la raiz de n]------->N[Fin]
+F-- No -->H[Bajar siguiente grupo al residuo]-->I[Multiplicar c * 2 y asignar ese valor a m]-->J
+J["Buscar x tal que al poner x a la derecha de m(mx), mx * x ≈ residuo"]-->K["Poner x a la derecha de c (cx)"]-->L
+L[Cambiar c por cx]-->M
+M
+M[Restar mx*x al residuo]-->F
 ```
 
