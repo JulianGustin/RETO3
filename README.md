@@ -10,8 +10,10 @@
 n: natural
 i: natural
 x: natural
-n = entrada (“Ingresar número natural”)
+
 Inicio
+n = entrada (“Ingresar número natural”)
+
   Para Cada i desde 2 hasta n Hacer 
   	x < i 
   	Para Cada x Hacer
